@@ -2,30 +2,33 @@
 
 #include <stdexcept>
 
-#include "consts.hpp"
-#include "enemies/enemy_normal.hpp"
-#include "items/spring.hpp"
-#include "platforms/platform_breakable.hpp"
-#include "platforms/platform_movable.hpp"
-#include "platforms/platform_normal.hpp"
-#include "spritesheet.hpp"
+#include "assets/consts.hpp"
+#include "assets/spritesheet.hpp"
+#include "game_object/game_objects_impl/enemy_normal.hpp"
+#include "game_object/game_objects_impl/platform_breakable.hpp"
+#include "game_object/game_objects_impl/platform_movable.hpp"
+#include "game_object/game_objects_impl/platform_normal.hpp"
+#include "game_object/game_objects_impl/spring.hpp"
 #include "utils/point_f.hpp"
 #include "utils/rectangle_f.hpp"
 
 SequenceManager::Entity::Entity(int x_, int y_, GameObject::CollisionType type_)
     : x(x_),
       y(y_),
-      type(type_) {}
+      type(type_) {
+}
 
 SequenceManager::Sequence::Sequence(int start_, int end_, int totalHeight_, int numOfEntities_, const std::vector<SequenceManager::Entity>& entities_)
     : start(start_),
       end(end_),
       totalHeight(totalHeight_),
       numOfEntities(numOfEntities_),
-      entities(entities_) {}
+      entities(entities_) {
+}
 
 void SequenceManager::readFromFile() {
     std::ifstream file(consts::SEQ_FILE);
+
     if (!file.is_open()) throw std::runtime_error(std::string("Failed to open file: ") + consts::SEQ_FILE);
 
     int numOfSeqs;
@@ -35,7 +38,6 @@ void SequenceManager::readFromFile() {
     for (int i = 0; i < numOfSeqs; i++) {
         int start, end, totalHeight, numOfEntities;
         file >> start >> end >> totalHeight >> numOfEntities;
-
         seqs.emplace_back(start, end, totalHeight, numOfEntities, readEntitiesFromFile(file, numOfEntities));
     }
 

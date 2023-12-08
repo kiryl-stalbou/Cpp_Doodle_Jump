@@ -24,8 +24,9 @@ build/obj/utils/calc.o: src/utils/calc.cpp src/utils/calc.hpp \
   include/SDL2/SDL_timer.h include/SDL2/SDL_version.h \
   include/SDL2/SDL_locale.h include/SDL2/SDL_misc.h \
   include/SDL2/SDL_image.h include/SDL2/SDL_mixer.h \
-  include/SDL2/SDL_ttf.h src/utils/../game_object.hpp \
-  src/utils/../utils/point_f.hpp src/utils/../utils/rectangle_f.hpp \
+  include/SDL2/SDL_ttf.h src/utils/../game_object/game_object.hpp \
+  src/utils/../game_object/../utils/point_f.hpp \
+  src/utils/../game_object/../utils/rectangle_f.hpp \
   src/utils/point_f.hpp
 
 src/utils/calc.hpp:
@@ -134,10 +135,10 @@ include/SDL2/SDL_mixer.h:
 
 include/SDL2/SDL_ttf.h:
 
-src/utils/../game_object.hpp:
+src/utils/../game_object/game_object.hpp:
 
-src/utils/../utils/point_f.hpp:
+src/utils/../game_object/../utils/point_f.hpp:
 
-src/utils/../utils/rectangle_f.hpp:
+src/utils/../game_object/../utils/rectangle_f.hpp:
 
 src/utils/point_f.hpp:

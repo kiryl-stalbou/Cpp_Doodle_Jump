@@ -1,11 +1,11 @@
 #include "system.hpp"
 
-#include "enemies/enemy_normal.hpp"
-#include "items/spring.hpp"
-#include "platforms/platform_breakable.hpp"
-#include "platforms/platform_movable.hpp"
-#include "platforms/platform_normal.hpp"
-#include "spritesheet.hpp"
+#include "assets/spritesheet.hpp"
+#include "game_object/game_objects_impl//enemy_normal.hpp"
+#include "game_object/game_objects_impl//platform_breakable.hpp"
+#include "game_object/game_objects_impl//platform_movable.hpp"
+#include "game_object/game_objects_impl//platform_normal.hpp"
+#include "game_object/game_objects_impl//spring.hpp"
 
 System::System(Window* win_) : win_(win_), menuScene_(&inputManager_), pauseScene_(&inputManager_) {
     FILE* file = fopen("record.txt", "r");
@@ -43,11 +43,11 @@ bool System::update() {
             break;
 
         case Event::EventType::LCLICK:
-            inputManager_.mouseHandle(InputMouse::Lclick);
+            inputManager_.mousePressed(InputMouse::Lclick);
             break;
 
         case Event::EventType::LRELEASE:
-            inputManager_.mouseHandle(InputMouse::Lrelease);
+            inputManager_.mousePressed(InputMouse::Lrelease);
             break;
 
         default: break;
@@ -55,6 +55,7 @@ bool System::update() {
     }
 
     if (currScene == SceneType::gameover) scenes_[1]->update(win_, this);
+
     return scenes_.back()->update(win_, this);
 }
 

@@ -1,7 +1,7 @@
 #include "calc.hpp"
 
 #include "../RSDL/rsdl.hpp"
-#include "../game_object.hpp"
+#include "../game_object/game_object.hpp"
 
 bool collided(const Point& mousePos, const GameObject* a) {
     if (a->getX() + a->getHitboxDeltaX() <= mousePos.x &&

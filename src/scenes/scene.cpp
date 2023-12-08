@@ -1,6 +1,6 @@
 #include "scene.hpp"
 
-#include "../game_object.hpp"
+#include "../game_object/game_object.hpp"
 
 Scene::Scene(InputManager* inputMan) : inputMan_(inputMan) {}
 
@@ -10,6 +10,7 @@ Scene::~Scene() {
 
 bool Scene::update(Window* win, System* sys) {
     for (GameObject* obj : objs_) obj->update(win);
+
     return true;
 }
 

@@ -4,11 +4,11 @@
 #include <vector>
 
 #include "input_manager.hpp"
-#include "scenes/game_scene.hpp"
-#include "scenes/gameover_scene.hpp"
-#include "scenes/menu_scene.hpp"
-#include "scenes/pause_scene.hpp"
 #include "scenes/scene.hpp"
+#include "scenes/scenes_impl/game_scene.hpp"
+#include "scenes/scenes_impl/gameover_scene.hpp"
+#include "scenes/scenes_impl/menu_scene.hpp"
+#include "scenes/scenes_impl/pause_scene.hpp"
 
 class System {
 public:

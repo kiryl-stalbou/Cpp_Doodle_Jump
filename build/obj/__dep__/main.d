@@ -23,13 +23,23 @@ build/obj/main.o: src/main.cpp src/RSDL/rsdl.hpp include/SDL2/SDL.h \
   include/SDL2/SDL_system.h include/SDL2/SDL_timer.h \
   include/SDL2/SDL_version.h include/SDL2/SDL_locale.h \
   include/SDL2/SDL_misc.h include/SDL2/SDL_image.h \
-  include/SDL2/SDL_mixer.h include/SDL2/SDL_ttf.h src/consts.hpp \
-  src/system.hpp src/input_manager.hpp src/scenes/game_scene.hpp \
-  src/scenes/../consts.hpp src/scenes/../doodle.hpp src/game_object.hpp \
-  src/utils/point_f.hpp src/utils/rectangle_f.hpp src/spritesheet.hpp \
-  src/scenes/../game_object.hpp src/scenes/../sequence_manager.hpp \
-  src/scenes/scene.hpp src/scenes/gameover_scene.hpp \
-  src/scenes/menu_scene.hpp src/scenes/pause_scene.hpp
+  include/SDL2/SDL_mixer.h include/SDL2/SDL_ttf.h src/assets/consts.hpp \
+  src/system.hpp src/input_manager.hpp src/scenes/scene.hpp \
+  src/scenes/scenes_impl/game_scene.hpp \
+  src/scenes/scenes_impl/../../assets/consts.hpp \
+  src/scenes/scenes_impl/../../game_object/game_object.hpp \
+  src/scenes/scenes_impl/../../game_object/../utils/point_f.hpp \
+  src/scenes/scenes_impl/../../game_object/../utils/rectangle_f.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/doodle.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/consts.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/spritesheet.hpp \
+  src/assets/../RSDL/rsdl.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../game_object.hpp \
+  src/scenes/scenes_impl/../../sequence_manager.hpp \
+  src/game_object/game_object.hpp src/scenes/scenes_impl/../scene.hpp \
+  src/scenes/scenes_impl/gameover_scene.hpp \
+  src/scenes/scenes_impl/menu_scene.hpp \
+  src/scenes/scenes_impl/pause_scene.hpp
 
 src/RSDL/rsdl.hpp:
 
@@ -135,34 +145,42 @@ include/SDL2/SDL_mixer.h:
 
 include/SDL2/SDL_ttf.h:
 
-src/consts.hpp:
+src/assets/consts.hpp:
 
 src/system.hpp:
 
 src/input_manager.hpp:
 
-src/scenes/game_scene.hpp:
-
-src/scenes/../consts.hpp:
-
-src/scenes/../doodle.hpp:
-
-src/game_object.hpp:
-
-src/utils/point_f.hpp:
-
-src/utils/rectangle_f.hpp:
-
-src/spritesheet.hpp:
-
-src/scenes/../game_object.hpp:
-
-src/scenes/../sequence_manager.hpp:
-
 src/scenes/scene.hpp:
 
-src/scenes/gameover_scene.hpp:
+src/scenes/scenes_impl/game_scene.hpp:
 
-src/scenes/menu_scene.hpp:
+src/scenes/scenes_impl/../../assets/consts.hpp:
 
-src/scenes/pause_scene.hpp:
+src/scenes/scenes_impl/../../game_object/game_object.hpp:
+
+src/scenes/scenes_impl/../../game_object/../utils/point_f.hpp:
+
+src/scenes/scenes_impl/../../game_object/../utils/rectangle_f.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/doodle.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/consts.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/spritesheet.hpp:
+
+src/assets/../RSDL/rsdl.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../game_object.hpp:
+
+src/scenes/scenes_impl/../../sequence_manager.hpp:
+
+src/game_object/game_object.hpp:
+
+src/scenes/scenes_impl/../scene.hpp:
+
+src/scenes/scenes_impl/gameover_scene.hpp:
+
+src/scenes/scenes_impl/menu_scene.hpp:
+
+src/scenes/scenes_impl/pause_scene.hpp:

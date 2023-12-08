@@ -1,8 +1,8 @@
 build/obj/sequence_manager.o: src/sequence_manager.cpp \
-  src/sequence_manager.hpp src/game_object.hpp src/utils/point_f.hpp \
-  src/utils/rectangle_f.hpp src/consts.hpp src/enemies/enemy_normal.hpp \
-  src/enemies/enemy.hpp src/enemies/../game_object.hpp \
-  src/items/spring.hpp src/items/../spritesheet.hpp src/RSDL/rsdl.hpp \
+  src/sequence_manager.hpp src/game_object/game_object.hpp \
+  src/game_object/../utils/point_f.hpp \
+  src/game_object/../utils/rectangle_f.hpp src/assets/consts.hpp \
+  src/assets/spritesheet.hpp src/assets/../RSDL/rsdl.hpp \
   include/SDL2/SDL.h include/SDL2/SDL_main.h include/SDL2/SDL_stdinc.h \
   include/SDL2/SDL_config.h include/SDL2/SDL_platform.h \
   include/SDL2/begin_code.h include/SDL2/close_code.h \
@@ -27,33 +27,32 @@ build/obj/sequence_manager.o: src/sequence_manager.cpp \
   include/SDL2/SDL_system.h include/SDL2/SDL_timer.h \
   include/SDL2/SDL_version.h include/SDL2/SDL_locale.h \
   include/SDL2/SDL_misc.h include/SDL2/SDL_image.h \
-  include/SDL2/SDL_mixer.h include/SDL2/SDL_ttf.h src/items/item.hpp \
-  src/items/../game_object.hpp src/platforms/platform_breakable.hpp \
-  src/platforms/../spritesheet.hpp src/platforms/platform.hpp \
-  src/platforms/../game_object.hpp src/platforms/platform_movable.hpp \
-  src/platforms/platform_normal.hpp src/spritesheet.hpp
+  include/SDL2/SDL_mixer.h include/SDL2/SDL_ttf.h \
+  src/game_object/game_objects_impl/enemy_normal.hpp \
+  src/game_object/game_objects_impl/enemy.hpp \
+  src/game_object/game_objects_impl/../game_object.hpp \
+  src/game_object/game_objects_impl/platform_breakable.hpp \
+  src/game_object/game_objects_impl/../../assets/spritesheet.hpp \
+  src/game_object/game_objects_impl/platform.hpp \
+  src/game_object/game_objects_impl/platform_movable.hpp \
+  src/game_object/game_objects_impl/platform_normal.hpp \
+  src/game_object/game_objects_impl/spring.hpp \
+  src/game_object/game_objects_impl/item.hpp src/utils/point_f.hpp \
+  src/utils/rectangle_f.hpp
 
 src/sequence_manager.hpp:
 
-src/game_object.hpp:
+src/game_object/game_object.hpp:
 
-src/utils/point_f.hpp:
+src/game_object/../utils/point_f.hpp:
 
-src/utils/rectangle_f.hpp:
+src/game_object/../utils/rectangle_f.hpp:
 
-src/consts.hpp:
+src/assets/consts.hpp:
 
-src/enemies/enemy_normal.hpp:
+src/assets/spritesheet.hpp:
 
-src/enemies/enemy.hpp:
-
-src/enemies/../game_object.hpp:
-
-src/items/spring.hpp:
-
-src/items/../spritesheet.hpp:
-
-src/RSDL/rsdl.hpp:
+src/assets/../RSDL/rsdl.hpp:
 
 include/SDL2/SDL.h:
 
@@ -157,20 +156,26 @@ include/SDL2/SDL_mixer.h:
 
 include/SDL2/SDL_ttf.h:
 
-src/items/item.hpp:
+src/game_object/game_objects_impl/enemy_normal.hpp:
 
-src/items/../game_object.hpp:
+src/game_object/game_objects_impl/enemy.hpp:
 
-src/platforms/platform_breakable.hpp:
+src/game_object/game_objects_impl/../game_object.hpp:
 
-src/platforms/../spritesheet.hpp:
+src/game_object/game_objects_impl/platform_breakable.hpp:
 
-src/platforms/platform.hpp:
+src/game_object/game_objects_impl/../../assets/spritesheet.hpp:
 
-src/platforms/../game_object.hpp:
+src/game_object/game_objects_impl/platform.hpp:
 
-src/platforms/platform_movable.hpp:
+src/game_object/game_objects_impl/platform_movable.hpp:
 
-src/platforms/platform_normal.hpp:
+src/game_object/game_objects_impl/platform_normal.hpp:
 
-src/spritesheet.hpp:
+src/game_object/game_objects_impl/spring.hpp:
+
+src/game_object/game_objects_impl/item.hpp:
+
+src/utils/point_f.hpp:
+
+src/utils/rectangle_f.hpp:

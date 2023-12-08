@@ -5,7 +5,7 @@
 #include <unordered_map>
 #include <vector>
 
-#include "game_object.hpp"
+#include "game_object/game_object.hpp"
 
 class Window;
 

@@ -2,7 +2,7 @@
 #define INPUT_MANAGER_HPP_INCLUDE
 
 #include "RSDL/rsdl.hpp"
-#include "consts.hpp"
+#include "assets/consts.hpp"
 
 struct InputKeys {
     enum type {
@@ -25,11 +25,12 @@ class InputManager {
 public:
     InputManager() = default;
 
+    void reset();
+
     void keyPressed(char key);
     void keyReleased(char key);
     void setMousePos(Point mousePos);
-    void mouseHandle(InputMouse::type state);
-    void reset();
+    void mousePressed(InputMouse::type state);
 
     bool isKeyPressed(InputKeys::type key) const;
     bool didKeyPress(InputKeys::type key) const;

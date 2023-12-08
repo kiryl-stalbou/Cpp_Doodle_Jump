@@ -24,7 +24,7 @@ build/obj/input_manager.o: src/input_manager.cpp src/input_manager.hpp \
   include/SDL2/SDL_timer.h include/SDL2/SDL_version.h \
   include/SDL2/SDL_locale.h include/SDL2/SDL_misc.h \
   include/SDL2/SDL_image.h include/SDL2/SDL_mixer.h \
-  include/SDL2/SDL_ttf.h src/consts.hpp
+  include/SDL2/SDL_ttf.h src/assets/consts.hpp
 
 src/input_manager.hpp:
 
@@ -132,4 +132,4 @@ include/SDL2/SDL_mixer.h:
 
 include/SDL2/SDL_ttf.h:
 
-src/consts.hpp:
+src/assets/consts.hpp:

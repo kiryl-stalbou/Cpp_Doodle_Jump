@@ -24,19 +24,30 @@ build/obj/system.o: src/system.cpp src/system.hpp src/input_manager.hpp \
   include/SDL2/SDL_timer.h include/SDL2/SDL_version.h \
   include/SDL2/SDL_locale.h include/SDL2/SDL_misc.h \
   include/SDL2/SDL_image.h include/SDL2/SDL_mixer.h \
-  include/SDL2/SDL_ttf.h src/consts.hpp src/scenes/game_scene.hpp \
-  src/scenes/../consts.hpp src/scenes/../doodle.hpp src/game_object.hpp \
-  src/utils/point_f.hpp src/utils/rectangle_f.hpp src/spritesheet.hpp \
-  src/scenes/../game_object.hpp src/scenes/../sequence_manager.hpp \
-  src/scenes/scene.hpp src/scenes/gameover_scene.hpp \
-  src/scenes/menu_scene.hpp src/scenes/pause_scene.hpp \
-  src/enemies/enemy_normal.hpp src/enemies/enemy.hpp \
-  src/enemies/../game_object.hpp src/items/spring.hpp \
-  src/items/../spritesheet.hpp src/items/item.hpp \
-  src/items/../game_object.hpp src/platforms/platform_breakable.hpp \
-  src/platforms/../spritesheet.hpp src/platforms/platform.hpp \
-  src/platforms/../game_object.hpp src/platforms/platform_movable.hpp \
-  src/platforms/platform_normal.hpp
+  include/SDL2/SDL_ttf.h src/assets/consts.hpp src/scenes/scene.hpp \
+  src/scenes/scenes_impl/game_scene.hpp \
+  src/scenes/scenes_impl/../../assets/consts.hpp \
+  src/scenes/scenes_impl/../../game_object/game_object.hpp \
+  src/scenes/scenes_impl/../../game_object/../utils/point_f.hpp \
+  src/scenes/scenes_impl/../../game_object/../utils/rectangle_f.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/doodle.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/consts.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/spritesheet.hpp \
+  src/assets/../RSDL/rsdl.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/../game_object.hpp \
+  src/scenes/scenes_impl/../../sequence_manager.hpp \
+  src/game_object/game_object.hpp src/scenes/scenes_impl/../scene.hpp \
+  src/scenes/scenes_impl/gameover_scene.hpp \
+  src/scenes/scenes_impl/menu_scene.hpp \
+  src/scenes/scenes_impl/pause_scene.hpp src/assets/spritesheet.hpp \
+  src/game_object/game_objects_impl//enemy_normal.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/enemy.hpp \
+  src/game_object/game_objects_impl//platform_breakable.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/platform.hpp \
+  src/game_object/game_objects_impl//platform_movable.hpp \
+  src/game_object/game_objects_impl//platform_normal.hpp \
+  src/game_object/game_objects_impl//spring.hpp \
+  src/scenes/scenes_impl/../../game_object/game_objects_impl/item.hpp
 
 src/system.hpp:
 
@@ -146,56 +157,56 @@ include/SDL2/SDL_mixer.h:
 
 include/SDL2/SDL_ttf.h:
 
-src/consts.hpp:
-
-src/scenes/game_scene.hpp:
-
-src/scenes/../consts.hpp:
-
-src/scenes/../doodle.hpp:
-
-src/game_object.hpp:
-
-src/utils/point_f.hpp:
-
-src/utils/rectangle_f.hpp:
-
-src/spritesheet.hpp:
-
-src/scenes/../game_object.hpp:
-
-src/scenes/../sequence_manager.hpp:
+src/assets/consts.hpp:
 
 src/scenes/scene.hpp:
 
-src/scenes/gameover_scene.hpp:
+src/scenes/scenes_impl/game_scene.hpp:
 
-src/scenes/menu_scene.hpp:
+src/scenes/scenes_impl/../../assets/consts.hpp:
 
-src/scenes/pause_scene.hpp:
+src/scenes/scenes_impl/../../game_object/game_object.hpp:
 
-src/enemies/enemy_normal.hpp:
+src/scenes/scenes_impl/../../game_object/../utils/point_f.hpp:
 
-src/enemies/enemy.hpp:
+src/scenes/scenes_impl/../../game_object/../utils/rectangle_f.hpp:
 
-src/enemies/../game_object.hpp:
+src/scenes/scenes_impl/../../game_object/game_objects_impl/doodle.hpp:
 
-src/items/spring.hpp:
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/consts.hpp:
 
-src/items/../spritesheet.hpp:
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../../assets/spritesheet.hpp:
 
-src/items/item.hpp:
+src/assets/../RSDL/rsdl.hpp:
 
-src/items/../game_object.hpp:
+src/scenes/scenes_impl/../../game_object/game_objects_impl/../game_object.hpp:
 
-src/platforms/platform_breakable.hpp:
+src/scenes/scenes_impl/../../sequence_manager.hpp:
 
-src/platforms/../spritesheet.hpp:
+src/game_object/game_object.hpp:
 
-src/platforms/platform.hpp:
+src/scenes/scenes_impl/../scene.hpp:
 
-src/platforms/../game_object.hpp:
+src/scenes/scenes_impl/gameover_scene.hpp:
 
-src/platforms/platform_movable.hpp:
+src/scenes/scenes_impl/menu_scene.hpp:
 
-src/platforms/platform_normal.hpp:
+src/scenes/scenes_impl/pause_scene.hpp:
+
+src/assets/spritesheet.hpp:
+
+src/game_object/game_objects_impl//enemy_normal.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/enemy.hpp:
+
+src/game_object/game_objects_impl//platform_breakable.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/platform.hpp:
+
+src/game_object/game_objects_impl//platform_movable.hpp:
+
+src/game_object/game_objects_impl//platform_normal.hpp:
+
+src/game_object/game_objects_impl//spring.hpp:
+
+src/scenes/scenes_impl/../../game_object/game_objects_impl/item.hpp:
