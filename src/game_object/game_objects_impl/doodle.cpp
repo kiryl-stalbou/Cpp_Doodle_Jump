@@ -102,7 +102,6 @@ void Doodle::setSpriteState() {
 }
 
 void Doodle::setHitbox() {
-    // set the hitbox so that the nose is not part of it
     if (spriteState_ == charState::RIGHT || spriteState_ == charState::RIGHTJUMP) {
         hitBox_.x = 0;
         hitBox_.w = 0.7 * box_.w;
